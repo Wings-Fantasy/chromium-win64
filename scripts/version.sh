@@ -10,7 +10,7 @@ function manualVersionInput() {
 }
 
 function getVersionOnline() {
-    VERSIONS=$(curl -s 'https://versionhistory.googleapis.com/v1/chrome/platforms/win64/channels/stable/versions/all/releases?filter=fraction%3E0.9,endtime=none')
+    VERSIONS=$(curl -s 'https://versionhistory.googleapis.com/v1/chrome/platforms/win64/channels/stable/versions/all/releases?filter=version=153.0.8010.48')
     CUR_VERSION=$(echo $VERSIONS | jq -e -r '.releases[0].version')
     if [ $? -ne 0 ]; then
         read -p "Unable to determine current stable version, provide manually: " CUR_VERSION
