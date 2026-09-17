@@ -11,7 +11,7 @@ call clean.cmd
 
 cd chromium\src
 cmd /c "git reset --hard"
-cmd /c "git -c core.deltaBaseCacheLimit=2g fetch --tags --progress"
+cmd /c "git -c core.deltaBaseCacheLimit=2g fetch --depth 1 origin tag %VERSION%"
 cmd /c "git checkout %VERSION%"
 cmd /c "gclient sync --with_branch_heads -f -R -D"
 cmd /c "python3 -m pip install pywin32"
