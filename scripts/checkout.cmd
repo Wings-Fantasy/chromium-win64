@@ -16,5 +16,3 @@ cmd /c "git checkout %VERSION%"
 cmd /c "gclient sync --with_branch_heads -f -R -D"
 cmd /c "python3 -m pip install pywin32"
 cd ..\..
-
-call patch.cmd
