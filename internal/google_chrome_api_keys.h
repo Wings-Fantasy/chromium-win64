@@ -7,7 +7,7 @@
 // =================================================================
 #define GOOGLE_API_KEY "AIzaSyA2KlwBX3mkFo30om9LUFYQhpqLoa_BNhE"
 #define GOOGLE_CLIENT_ID_MAIN "77185425430.apps.googleusercontent.com"
-#define GOOGLE_CLIENT_SECRET_MAIN "OTJgUOQcT7107GsGZq2G4I1T"
+#define GOOGLE_CLIENT_SECRET_MAIN "OTJgUOQcT7lO7GsGZq2G4IlT"
 
 // 兼容新版 Chromium 默认回退宏
 #define GOOGLE_DEFAULT_API_KEY GOOGLE_API_KEY
